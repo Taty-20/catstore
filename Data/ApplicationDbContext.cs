@@ -13,4 +13,6 @@ public class ApplicationDbContext : IdentityDbContext
 
 
     public DbSet<Contacto> DataContactos { get;set;} //AGREGAR para que la bd se guarde el dato del formulario contacto y se visualice en t_contacto
+
+    public DbSet<Producto> DataProductos { get;set;} //AGREGAR PARA INICIAR LA MIGRACION t_producto
 }
