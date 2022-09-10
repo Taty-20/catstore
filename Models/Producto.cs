@@ -4,6 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations.Schema;//AGREGAR
 
+
+//creamos la tabla para que aparesca en el dbeaver
 namespace catstore.Models
 {
     [Table("t_producto")] //AGREGAR
