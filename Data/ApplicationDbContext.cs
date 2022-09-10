@@ -12,5 +12,5 @@ public class ApplicationDbContext : IdentityDbContext
     }
 
 
-    public DbSet<Contacto> DataContactos { get;set;} //AGREGAR
+    public DbSet<Contacto> DataContactos { get;set;} //AGREGAR para que la bd se guarde el dato del formulario contacto y se visualice en t_contacto
 }
