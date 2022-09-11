@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using catstore.Data;//AGREGAR
-using catstore.Models;//AGREGAR
 using Microsoft.EntityFrameworkCore;//AGREGAR
+
+using catstore.Models;
 
 namespace catstore.Controllers
 {
@@ -33,8 +34,9 @@ namespace catstore.Controllers
             return View(await productos.ToListAsync()); //retornar la lista de productos
         }
 
-        public async Task<IActionResult> Details(int? id){   //AGREGAR TODO ESTO
+        public async Task<IActionResult> Details(int? id){   //AGREGAR TODO ESTO //details catalogo //buscador de producto basados en el id
             Producto objProduct = await _context.DataProductos.FindAsync(id);
+            
             if(objProduct == null){
                 return NotFound();
             }
